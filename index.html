@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Cards in a Row</title>
+<style>
+    
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #6F6AF7;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+
+        .icon {
+            font-size: 24px;
+            color: #333;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .top-icons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .bottom-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .icon.whatsapp {
+            margin-top: 20px;
+            color: #0feba5;
+        }
+        .icon.facebook {
+            color: #3498DB; /* Blue for Facebook */
+        }
+        .icon.twitter {
+            color: #1DA1F2; /* Blue for Twitter */
+        }
+        .icon.support {
+            color: #070707; 
+        }
+
+  .container1,.container2, .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  .card1, .card3 {
+    width: 45%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .image-card {
+    text-align: center;
+  }
+  .image-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .text-card input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .card2 {
+    width: 180px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .red { background-color: #929DFF; color: #ffffff;}
+  .blue { background-color: #734CF2; color: #ffffff;}
+  .green { background-color: #D288FF; color: #ffffff;}
+  .yellow { background-color: #000000; color: #ffffff;}
+
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    }
+
+  .container2 {
+    background-color: #483EFF
+    }
+
+   .left-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+   }
+
+   .right-column {
+    flex: 2;
+    padding: 20px;
+    background-color: #e0e0e0;
+   }
+
+   .small-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #483EFF;
+   }
+
+   .large-box {
+    padding: 20px;
+    border: 1px solid #999;
+    background-color: #ffffff;
+   }
+
+   .container3 {
+    background-color: #483EFF;
+   }
+
+   .card4 {
+    background-color: #FFFFFF;
+   }
+
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-text">Your DAPPR</div>
+        <div class="nav-links">
+            <span>Home</span> &nbsp;
+            <span>About Us</span> &nbsp;
+            <span>Information</span>&nbsp;
+            <span>More</span>&nbsp;
+        </div>
+        <div class="search-bar">
+            <!-- Add your search bar HTML here -->
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="menu-icon">
+            <!-- Add your menu icon (3 lines icon) HTML here -->
+            ☰
+        </div>
+    </div>
+
+    <div class="top-icons">
+        <span class="icon whatsapp"><i class="fab fa-whatsapp"></i></span>
+        <span class="icon facebook"><i class="fab fa-facebook"></i></span>
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+    </div>
+
+  <div class="container1">
+    <div class="image-card">
+      <img src="comp.png" alt="Placeholder Image">
+    </div>
+    <div class="card1 text-card">
+        <textarea rows="31" cols="70" placeholder="It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......"></textarea>
+    </div>
+  </div>
+  <div class = "card-row">
+    <div class="card2 red">Total Question’s <br>200,000
+    </div>
+      <div class="card2 blue">Total Answer’s <br>105,000</div>
+      <div class="card2 green">Participated<br> 10,000</div>
+      <div class="card2 yellow">Total Passed <br>6,000</div>
+  </div>
+
+
+<div class="container3">
+    <div class="image-card">
+        <div class="card1 small-box">YOUR INFO</div>
+        <div class="small-box">BOOKMARKS</div>
+        <div class="small-box">SETTINGS</div>
+    </div>
+    <div class="card1 text-card card4">
+        <h3>Your information</h3>
+        <ul>
+            <li>Name  : Atul Singhal</li>
+            <li>Email : atul@gmail.com</li>
+            <li>Phone : +91 8131424888</li>
+            <li>Marks : 500.00</li>
+        </ul>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
